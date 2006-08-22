@@ -1,0 +1,67 @@
+gresolver
+------------------------------------------
+GResolver is a graphical DNS query tool. It allows system administrators
+to quickly and easily make the most common DNS queries without
+constructing lengthy dig commands.
+
+GResolver supports all the main resource record types, including AAAA,
+AXFR, MX and TXT, and the appropriate in-addr.arpa address is
+constructed from dotted-quad IP addresses when doing PTR queries. There
+are checkboxes for controlling the most commonly-used options.
+
+Runtime requirements:
+  cygwin-1.5.21-1
+  bind-9.3.2-1
+  perl-5.8.7-5
+  perl-Gtk2-1.122-1
+  perl-Gtk2-GladeXML-1.005-1
+  perl-Locale-gettext-1.05-1
+  perl-Net-IPv6Addr-0.2-1
+
+Build requirements:
+  cygwin-1.5.21-1
+  cygport-0.2.5-1
+  make-3.81-1
+  sed-4.1.5-1
+
+Canonical website:
+  http://jodrell.net/projects/gresolver
+
+Canonical download:
+  http://jodrell.net/files/gresolver/
+
+-------------------------------------------
+
+Build instructions:
+  unpack gresolver-0.0.5-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./gresolver-0.0.5-X.cygport all
+
+This will create:
+  /usr/src/gresolver-0.0.5-X-src.tar.bz2
+  /usr/src/gresolver-0.0.5-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/gresolver
+  /usr/share/applications/gresolver.desktop
+  /usr/share/doc/Cygwin/gresolver-0.0.5.README
+  /usr/share/doc/gresolver-0.0.5/COPYING
+  /usr/share/doc/gresolver-0.0.5/ChangeLog
+  /usr/share/gresolver/gresolver.glade
+  /usr/share/pixmaps/gresolver.png
+
+------------------
+
+Port Notes:
+
+----- version 0.0.5-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

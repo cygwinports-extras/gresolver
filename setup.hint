@@ -1,0 +1,11 @@
+category: Gnome Net
+requires: cygwin bind perl perl-Gtk2 perl-Gtk2-GladeXML perl-Locale-gettext perl-Net-IPv6Addr
+sdesc: "GNOME DNS query tool"
+ldesc: "GResolver is a graphical DNS query tool. It allows system
+administrators to quickly and easily make the most common DNS queries
+without constructing lengthy dig commands.
+
+GResolver supports all the main resource record types, including AAAA,
+AXFR, MX and TXT, and the appropriate in-addr.arpa address is
+constructed from dotted-quad IP addresses when doing PTR queries. There
+are checkboxes for controlling the most commonly-used options."

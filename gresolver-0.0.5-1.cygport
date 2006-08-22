@@ -1,0 +1,12 @@
+DESCRIPTION="GNOME DNS query tool"
+HOMEPAGE="http://jodrell.net/projects/gresolver"
+SRC_URI="http://jodrell.net/files/${PN}/${P}.tar.gz"
+
+USE_DESTDIR=0
+
+src_compile() {
+	lndirs
+	cd ${B}
+	./configure
+	cygmake
+}
